@@ -1,6 +1,6 @@
 # Welcome to Mega Minds Website
 
-Hi! I’m **Om Pandey**, a passionate Full Stack Developer. I created this modern business website for **[Customer's Business Name]** with the latest technologies to help their business grow and thrive in the digital world.
+Hi! I’m **Om Pandey**, a passionate Full Stack Developer. I created this modern business website for **Mega Minds** with the latest technologies to help their business grow and thrive in the digital world.
 
 ## About the Website
 
