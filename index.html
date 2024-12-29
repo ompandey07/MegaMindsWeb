@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Minds</title>
+    <link rel="shortcut icon" href="thinking.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const scroll = new LocomotiveScroll({
+            el: document.body, // Apply smooth scrolling to the entire body
+            smooth: true, // Enable smooth scrolling
+          });
+        });
+      </script>
+    
+</head>
+<body class="bg-black min-h-screen text-white relative overflow-x-hidden" data-scroll-container >
+    <!-- Border Grid -->
+    <div class="border-grid absolute inset-0 opacity-80"></div>
+
+    <div class="container mx-auto px-4 py-8 relative">
+        <!-- Header with Logo -->
+        <header class="flex justify-between items-center mb-20 fade-in">
+            <div class="flex items-center gap-2">
+                <!-- Reduced image size to w-10 and changed font to a different font for "Mega Minds" -->
+                <img src="MainLogo.png" alt="Logo" class="w-16">
+                <span class="text-cyan-400 text-xl font-bold">Mega Minds</span>
+            </div>
+            <div class="text-gray-400 text-sm">
+                <!-- Updated the email to megamindsnepal@gmail.com -->
+                <a href="mailto:megamindsnepal@gmail.com" class="hover:text-white tracking-wider">MAIL: MEGAMINDSNEPAL@GMAIL.COM</a>
+            </div>
+        </header>
+        
+        
+
+        <!-- Main Hero Section -->
+        <main class="mt-32 relative z-10 overflow-hidden p-[50px]">
+            <div class="max-w-4xl">
+                <h1 class="text-6xl font-bold leading-tight mb-8 relative">
+                    <div class="reveal-text">MEGA MINDS IT</div>
+                    <div class="flex items-center gap-2 reveal-text" style="animation-delay: 0.5s;">
+                        <span class="text-orange-500 glowing-text">FOR</span>
+                        <i class="ri-arrow-right-up-line text-orange-500 text-5xl floating-arrow"></i>
+                    </div>
+                    <div class="reveal-text" style="animation-delay: 1s;">NEXT-GEN BUSINESSES</div>
+                    <!-- Gradient line that follows scroll -->
+                    <div class="gradient-line"></div>
+                </h1>
+        
+                <p class="text-gray-400 text-xl mb-12 slide-in-text" style="animation-delay: 1.5s;">
+                    At MegaMinds, we innovate. We deliver. We excel.<br>
+                    <span class="typing-text">Join us in shaping tomorrow's digital landscape.</span>
+                </p>
+        
+                <!-- Stats with counter animation -->
+                <div class="flex gap-20 mt-20 stats-container" style="animation-delay: 2s;">
+                    <div class="stat-item">
+                        <div class="text-4xl font-bold mb-2 counter" data-target="3">3</div>
+                        <div class="text-gray-400 slide-up">Years Of Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="text-4xl font-bold mb-2 counter" data-target="25">20</div>
+                        <div class="text-gray-400 slide-up">Completed Projects</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+            <!-- About Us Section -->
+            <section class="mt-40 max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold mb-16 animate-fade-up">ABOUT US</h2>
+                <div class="grid grid-cols-2 gap-16">
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-32 h-32 border border-cyan-400 animate-border stagger-1"></div>
+                        <img src="MainLogo.png" alt="Team" class="w-full relative z-10 animate-fade-up stagger-2">
+                        <div class="absolute -bottom-4 -right-4 w-32 h-32 border border-orange-500 animate-border stagger-3"></div>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold mb-8 text-cyan-400 animate-fade-up stagger-1">We Are Digital Innovators</h3>
+                        <div class="space-y-8">
+                            <div class="flex gap-6">
+                                <div class="w-1 bg-cyan-400 animate-slide-left stagger-2"></div>
+                                <p class="text-gray-400 text-lg leading-relaxed animate-fade-up stagger-2" id="servdata">
+                                    At MegaMinds, we’re fueled by a passion to transform the digital landscape. Our journey began with a vision to bring together a diverse group of talented individuals who are united by a shared love for technology and innovation. Together, we’re not just solving problems—we’re creating meaningful change, helping businesses of all sizes grow and thrive in an ever-changing world.
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-2 gap-6">
+                                <div class="service-card border border-gray-800 p-6 hover:border-cyan-400 transition-colors stagger-1">
+                                    <i class="ri-code-s-slash-line text-3xl text-cyan-400 mb-4"></i>
+                                    <h4 class="text-xl font-bold mb-2">Development</h4>
+                                    <p class="text-gray-400">Custom software solutions tailored to your needs</p>
+                                </div>
+                                <div class="service-card border border-gray-800 p-6 hover:border-cyan-400 transition-colors stagger-2">
+                                    <i class="ri-cloud-line text-3xl text-cyan-400 mb-4"></i>
+                                    <h4 class="text-xl font-bold mb-2">Cloud Solutions</h4>
+                                    <p class="text-gray-400">Scalable and secure cloud infrastructure</p>
+                                </div>
+                                <div class="service-card border border-gray-800 p-6 hover:border-cyan-400 transition-colors stagger-3">
+                                    <i class="ri-smartphone-line text-3xl text-cyan-400 mb-4"></i>
+                                    <h4 class="text-xl font-bold mb-2">Mobile Apps</h4>
+                                    <p class="text-gray-400">Native and cross-platform mobile solutions</p>
+                                </div>
+                                <div class="service-card border border-gray-800 p-6 hover:border-cyan-400 transition-colors stagger-4">
+                                    <i class="ri-briefcase-2-line text-3xl text-cyan-400 mb-4"></i>
+                                    <h4 class="text-xl font-bold mb-2">ERP Solution</h4>
+                                    <p class="text-gray-400">Tally ERP, integrated business management software</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+
+            
+            <!-- Works Section  -->
+            <section class="mt-40 works-section">
+                <h2 class="text-4xl font-bold mb-16 fade-in">LATEST WORKS</h2>
+                <div class="works-container">
+                    <div class="works-scroll">
+                        <!-- Original cards -->
+                        <a href="https://nepalicinema.vercel.app/" target="_blank" class="work-card relative fade-in delay-1 group">
+                            <img src="https://xdfile.com/wp-content/uploads/2020/04/cinema-website-template-for-xd.jpg" alt="MovieApp" class="w-full h-80 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="absolute bottom-0 left-0 p-8">
+                                    <h3 class="text-2xl font-bold mb-2">MovieApp</h3>
+                                    <p class="text-gray-400">Get All New Info Regarding Upcoming Movies</p>
+                                    <div class="flex gap-4 mt-4">
+                                        <span class="text-sm bg-cyan-400/20 px-3 py-1">React</span>
+                                        <span class="text-sm bg-cyan-400/20 px-3 py-1">Firebase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+            
+                        <a href="https://www.ganeshmansingh.edu.np/" target="_blank" class="work-card relative fade-in delay-2 group">
+                            <img src="https://themewagon.com/wp-content/uploads/2021/11/grad-school-1.png" alt="College Site" class="w-full h-80 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="absolute bottom-0 left-0 p-8">
+                                    <h3 class="text-2xl font-bold mb-2">CollegeSite</h3>
+                                    <p class="text-gray-400">A Complete Modern Site Using HTML, JS, Bootstrap</p>
+                                    <div class="flex gap-4 mt-4">
+                                        <span class="text-sm bg-cyan-400/20 px-3 py-1">HTML</span>
+                                        <span class="text-sm bg-cyan-400/20 px-3 py-1">JS</span>
+                                        <span class="text-sm bg-cyan-400/20 px-3 py-1">Bootstrap</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+            
+                        <a href="#" class="work-card relative fade-in delay-3 group">
+                            <img src="https://themewagon.com/wp-content/uploads/2024/06/DashDarkX-_edit-1200x737.webp" alt="Bean Track" class="w-full h-80 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="absolute bottom-0 left-0 p-8">
+                                    <h3 class="text-2xl font-bold mb-2">Bean Track</h3>
+                                    <p class="text-gray-400">A Complete AI-Based Web ERP</p>
+                                    <div class="flex gap-4 mt-4">
+                                        <span class="text-sm bg-cyan-400/20 px-3 py-1">Python</span>
+                                        <span class="text-sm bg-cyan-400/20 px-3 py-1">Django</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+            
+                        <!-- Duplicate cards for infinite scroll -->
+                        <a href="https://nepalicinema.vercel.app/" target="_blank" class="work-card relative fade-in delay-1 group">
+                            <img src="https://xdfile.com/wp-content/uploads/2020/04/cinema-website-template-for-xd.jpg" alt="MovieApp" class="w-full h-80 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="absolute bottom-0 left-0 p-8">
+                                    <h3 class="text-2xl font-bold mb-2">MovieApp</h3>
+                                    <p class="text-gray-400">Get All New Info Regarding Upcoming Movies</p>
+                                    <div class="flex gap-4 mt-4">
+                                        <span class="text-sm bg-cyan-400/20 px-3 py-1">React</span>
+                                        <span class="text-sm bg-cyan-400/20 px-3 py-1">Firebase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+            
+                        <a href="https://www.ganeshmansingh.edu.np/" target="_blank" class="work-card relative fade-in delay-2 group">
+                            <img src="https://themewagon.com/wp-content/uploads/2021/11/grad-school-1.png" alt="College Site" class="w-full h-80 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="absolute bottom-0 left-0 p-8">
+                                    <h3 class="text-2xl font-bold mb-2">CollegeSite</h3>
+                                    <p class="text-gray-400">A Complete Modern Site Using HTML, JS, Bootstrap</p>
+                                    <div class="flex gap-4 mt-4">
+                                        <span class="text-sm bg-cyan-400/20 px-3 py-1">HTML</span>
+                                        <span class="text-sm bg-cyan-400/20 px-3 py-1">JS</span>
+                                        <span class="text-sm bg-cyan-400/20 px-3 py-1">Bootstrap</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+            
+                        <a href="#" class="work-card relative fade-in delay-3 group">
+                            <img src="https://themewagon.com/wp-content/uploads/2024/06/DashDarkX-_edit-1200x737.webp" alt="Bean Track" class="w-full h-80 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="absolute bottom-0 left-0 p-8">
+                                    <h3 class="text-2xl font-bold mb-2">Bean Track</h3>
+                                    <p class="text-gray-400">A Complete AI-Based Web ERP</p>
+                                    <div class="flex gap-4 mt-4">
+                                        <span class="text-sm bg-cyan-400/20 px-3 py-1">Python</span>
+                                        <span class="text-sm bg-cyan-400/20 px-3 py-1">Django</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        
+
+        <!-- Workflow Section -->
+        <section class="mt-40">
+            <h2 class="text-4xl font-bold mb-16 fade-in">OUR WORKFLOW</h2>
+            <div class="relative">
+                <div class="flex justify-between items-start max-w-5xl mx-auto workflow-container">
+                    <!-- Connection lines between steps -->
+                    <div class="workflow-line"></div>
+                    
+                    <div class="workflow-step relative text-center animate-workflow">
+                        <div class="w-16 h-16 bg-cyan-400/20 mx-auto mb-6 flex items-center justify-center icon-bounce">
+                            <i class="ri-discuss-line text-2xl text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Discovery</h3>
+                        <p class="text-gray-400 max-w-[200px]">Understanding your needs and objectives</p>
+                    </div>
+        
+                    <div class="workflow-step relative text-center animate-workflow" style="animation-delay: 200ms;">
+                        <div class="w-16 h-16 bg-cyan-400/20 mx-auto mb-6 flex items-center justify-center icon-bounce">
+                            <i class="ri-layout-masonry-line text-2xl text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Planning</h3>
+                        <p class="text-gray-400 max-w-[200px]">Designing the perfect solution</p>
+                    </div>
+        
+                    <div class="workflow-step relative text-center animate-workflow" style="animation-delay: 400ms;">
+                        <div class="w-16 h-16 bg-cyan-400/20 mx-auto mb-6 flex items-center justify-center icon-bounce">
+                            <i class="ri-code-box-line text-2xl text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Development</h3>
+                        <p class="text-gray-400 max-w-[200px]">Building with precision and care</p>
+                    </div>
+        
+                    <div class="workflow-step relative text-center animate-workflow" style="animation-delay: 600ms;">
+                        <div class="w-16 h-16 bg-cyan-400/20 mx-auto mb-6 flex items-center justify-center icon-bounce">
+                            <i class="ri-rocket-line text-2xl text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Deployment</h3>
+                        <p class="text-gray-400 max-w-[200px]">Launching your success story</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Our Story Section -->
+        <section class="mt-40">
+            <h2 class="text-4xl font-bold mb-16 fade-in">OUR STORY</h2>
+            <div class="grid grid-cols-2 gap-16 items-center">
+                <div class="slide-in-left">
+                    <h3 class="text-2xl font-bold mb-6 text-cyan-400 typing-text">From Vision to Reality</h3>
+                    <div class="space-y-8">
+                        <div class="flex gap-6 timeline-entry">
+                            <div class="w-1 bg-cyan-400 line-grow"></div>
+                            <p class="text-gray-400 text-lg leading-relaxed fade-in-up" id="servdata">
+                                MegaMinds was created with a simple yet powerful vision: to make technology both accessible and impactful for businesses of all sizes. Since its inception, the company has been dedicated to helping clients transform their operations and achieve their full potential through innovative tech solutions
+                            </p>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="border border-gray-800 p-6 hover:border-cyan-400 transition-colors card-hover">
+                                <div class="flex gap-4 mb-4">
+                                    <div class="w-12 h-12 bg-cyan-400/20 flex items-center justify-center flex-shrink-0 icon-pulse">
+                                        <i class="ri-flag-line text-2xl text-cyan-400"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-2">Our Mission</h4>
+                                        <p class="text-gray-400">To empower businesses through innovative technology solutions that drive growth and success.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border border-gray-800 p-6 hover:border-cyan-400 transition-colors card-hover">
+                                <div class="flex gap-4 mb-4">
+                                    <div class="w-12 h-12 bg-orange-500/20 flex items-center justify-center flex-shrink-0 icon-pulse">
+                                        <i class="ri-eye-line text-2xl text-orange-500"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-2">Our Vision</h4>
+                                        <p class="text-gray-400">To be the leading force in digital transformation, setting new standards in technological innovation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in delay-2 relative image-container">
+                    <div class="absolute -top-4 -left-4 w-32 h-32 border border-orange-500 floating-border"></div>
+                    <img src="https://c0.wallpaperflare.com/preview/412/1015/756/nepal-kathmandu-swayambhu-maha-chaitya.jpg" alt="Our Journey" class="w-full relative z-10 image-reveal">
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 border border-cyan-400 floating-border"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="mt-40 mb-20">
+            <h2 class="text-4xl font-bold mb-16 fade-in">CONTACT US</h2>
+            <div class="grid grid-cols-2 gap-16">
+                <div class="fade-in delay-1">
+                    <h3 class="text-2xl font-bold mb-8 text-cyan-400">Get In Touch</h3>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <input type="text" placeholder="Your Name" class="w-full bg-transparent border border-gray-800 p-4 text-white hover:border-cyan-400 transition-colors">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Your Email" class="w-full bg-transparent border border-gray-800 p-4 text-white hover:border-cyan-400 transition-colors">
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Subject" class="w-full bg-transparent border border-gray-800 p-4 text-white hover:border-cyan-400 transition-colors">
+                        </div>
+                        <div>
+                            <textarea rows="6" placeholder="Your Message" class="w-full bg-transparent border border-gray-800 p-4 text-white hover:border-cyan-400 transition-colors"></textarea>
+                        </div>
+                        <button class="bg-cyan-400 text-black font-bold px-8 py-4 hover:bg-cyan-300 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="fade-in delay-2 space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-8 text-cyan-400">Contact Information</h3>
+                        <div class="space-y-8">
+                            <div class="flex gap-6 items-start">
+                                <div class="w-12 h-12 bg-cyan-400/20 flex items-center justify-center flex-shrink-0">
+                                    <i class="ri-map-pin-line text-2xl text-cyan-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">Location</h4>
+                                    <p class="text-gray-400">Kathmandu, Nepal</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6 items-start">
+                                <div class="w-12 h-12 bg-cyan-400/20 flex items-center justify-center flex-shrink-0">
+                                    <i class="ri-mail-line text-2xl text-cyan-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">Email</h4>
+                                    <p class="text-gray-400">megamindsnepal@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6 items-start">
+                                <div class="w-12 h-12 bg-cyan-400/20 flex items-center justify-center flex-shrink-0">
+                                    <i class="ri-phone-line text-2xl text-cyan-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-2">Phone</h4>
+                                    <p class="text-gray-400">+977-9849789143 , 9863588895</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map Section -->
+                    <div class="h-[300px] relative">
+                        <div class="absolute inset-0 bg-cyan-400/10"></div>
+                        <!-- Replace the src with your Google Maps embed URL -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.277768698135!2d85.28493325653432!3d27.709030241430067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e0!3m2!1sen!2snp!4v1735488917470!5m2!1sen!2snp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="absolute inset-0 border border-cyan-400/20"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Side Links -->
+        <div class="fixed top-0 right-8 h-full flex flex-col justify-between items-center py-8">
+            <div class="space-y-32 text-gray-400 text-sm">
+                <a href="https://www.facebook.com" class="side-links block hover:text-white transition-colors fade-in">FACEBOOK</a>
+                <a href="https://www.linkedin.com" class="side-links block hover:text-white transition-colors fade-in delay-1">LINKEDIN</a>
+                <a href="https://www.instagram.com" class="side-links block hover:text-white transition-colors fade-in delay-2">INSTAGRAM</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Decorative Elements -->
+    <div class="fixed top-4 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-white"></div>
+    <div class="fixed bottom-4 right-1/2 transform translate-x-1/2 w-8 h-8 border border-white"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
